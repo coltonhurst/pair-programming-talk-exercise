@@ -1,0 +1,12 @@
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin: 0px auto 0px auto;
+	padding: 40px 40px 40px 40px;
+	max-width: 600px;
+	line-height: 26px;
+	color: #000000;
+}
+
+canvas {
+    border: 1px solid black;
+}
