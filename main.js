@@ -49,7 +49,13 @@ function ballToPaddleCollisonCheck() {
 }
 
 function ballToBrickCollisonCheck() {
-    // IMPLEMENT ME!
+    for (i = 0; i < bricks.rowCount; i++) {
+        for (j = 0; j < bricks.columnCount; j++) {
+            if (bricks[i][j].active == true) {
+                // IMPLEMENT ME!
+            }
+        }
+    }
 }
 
 function sideCollisionCheck() {
