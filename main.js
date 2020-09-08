@@ -147,11 +147,11 @@ function ballMovement() {
     sideCollisionCheck();
 
     // if the ball is in the top section of the screen
-    if (ball.y + ball.dy < canvas.height - (paddle.height * 2)) {
+    if (ball.y + ball.dy < canvas.height / 2) {
         topCollisionCheck();
         ballToBrickCollisonCheck();
     }
-    // if the ball is below the bottom of the screen
+    // if the ball below the screen
     else if (ball.y + ball.dy > canvas.height + (ball.radius * 2)) {
         if (counts.gameOverShown == false) {
             counts.lives--;
@@ -166,7 +166,7 @@ function ballMovement() {
             }
         }
     }
-    // in the bottom section of the screen
+    // if the ball is in the bottom half of the screen
     else {
         ballToPaddleCollisonCheck();
     }
